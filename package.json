@@ -4,9 +4,8 @@
   "description": "Help you find water coolers near you",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm install", 
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "npm install && node index.js"
   },
   "repository": {
     "type": "git",
