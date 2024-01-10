@@ -23,10 +23,7 @@ exports.getLatLong = async(postcode, name) => {
     });
   return wantedData.data
 }
-  // cloudinary.uploader.upload(`${outputDirectory}/${inputFile.originalname}`,
-    //   { public_id: "water_cooler" }).then((result) => {
-    //     console.log(result)
-    //   });
+
 exports.uploadToCloudinary = (image) => {
   return new Promise((resolve, reject) => {
     cloudinary.uploader.upload(image, { public_id: "water_cooler" }, (err, url) => {

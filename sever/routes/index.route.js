@@ -17,19 +17,35 @@ module.exports = app => {
   router.get("/about", (req, res) => {
     res.render("about.hbs")
   });
-  router.get("/unverified", (req,res) => {
-    WaterCoolerPoints.find({ verified: false })
-    .then(data => {
-      res.render('unverifiedTable.hbs', {
-        data
+  router.get("/unverified", (req, res) => {
+    const reject = () => {
+      res.setHeader("www-authenticate", "Basic");
+      res.sendStatus(401);
+    };
+    const authorization = req.headers.authorization;
+    if (!authorization) {
+      return reject();
+    }
+    const [username, password] = Buffer.from(
+      authorization.replace("Basic ", ""),
+      "base64"
+    ).toString().split(":");
+    if (!(username === "molly" && password === "1234")) {
+      return reject();
+    } else {
+      WaterCoolerPoints.find({ verified: false })
+      .then(data => {
+        res.render('unverifiedTable.hbs', {
+          data
+        });
+      })
+      .catch(err => {
+        res.status(500).send({
+          message:
+            err.message || "Some error occurred while retrieving WaterCoolerPoint."
+        });
       });
-    })
-    .catch(err => {
-      res.status(500).send({
-        message:
-          err.message || "Some error occurred while retrieving WaterCoolerPoint."
-      });
-    });
+    }
   });
 
   app.use("/", router);
