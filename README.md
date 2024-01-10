@@ -11,7 +11,7 @@ I tried searching on Google Maps and Apple Maps, but to no avail – such data i
 
 
 ## My Solution:
-I decided to create a map website by using leaflet.js. Upon opening, the website shows nearby water points, giving details like latitude and longitude, the floor(storey), and whether the water is room temperature, cold, or hot. It also displays a picture of the area and easily integrates with third-party map applications for navigation.
+I decided to create a map website by using leaflet.js. Upon opening, the website shows all the water points(and also you can click nearme button to get the water points near you ), giving details like latitude and longitude, the floor(storey), and whether the water is room temperature, cold, or hot. It also displays a picture of the area and easily integrates with third-party map applications for navigation.
 
 Of course, I don't have complete data. Hence, the app includes a feature to "upload a water point", encouraging community participation to gradually enhance the database. The goal is to cover most of the water points in Singapore. Thus, Water Cooler Map SG was born. However, as I'm new to Leaflet, the app may have some minor issues and a basic interface, but I'm committed to improving it.
 
