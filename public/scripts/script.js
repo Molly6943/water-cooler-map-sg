@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", async function () {
   const searchResultLayer = L.layerGroup();
   searchResultLayer.addTo(map);
 
+  const markerCluster = L.markerClusterGroup();
+
+
   // Variable to store the currently highlighted marker
   let highlightedMarker = null;
   // Variable to store the previously validated status
@@ -232,8 +235,12 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     function showPosition(position) {
       // set map based on user's position
+      const latLng = [position.coords.latitude, position.coords.longitude]
       if (position) {
-        map.setView([position.coords.latitude, position.coords.longitude], 15);
+
+        map.setView(latLng, 15);
+        markerCluster.addLayer(L.marker(latLng));
+        map.addLayer(markerCluster);
       } else {
         alert('cannot get your location')
       }
