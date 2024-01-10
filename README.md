@@ -9,14 +9,13 @@ Access to free, safe drinking water outdoors is particularly beneficial for thos
 ## Attempted Solutions:
 I tried searching on Google Maps and Apple Maps, but to no avail – such data is probably only relevant in Singapore and is a niche need, not covered by these major platforms. Even various Singapore government websites didn't provide the answers I sought.
 
-I found someone who attempted something similar here. The creator, a first-year university student, used Google Forms to gather data and display it on a custom Google Map. However, it seems the project hasn't been updated in over half year, and several known points around me are missing. Moreover, most points lack pictures, which could make practical usage challenging.
 
 ## My Solution:
 I decided to create a map website by using leaflet.js. Upon opening, the website shows nearby water points, giving details like latitude and longitude, the floor(storey), and whether the water is room temperature, cold, or hot. It also displays a picture of the area and easily integrates with third-party map applications for navigation.
 
 Of course, I don't have complete data. Hence, the app includes a feature to "upload a water point", encouraging community participation to gradually enhance the database. The goal is to cover most of the water points in Singapore. Thus, Water Cooler Map SG was born. However, as I'm new to Leaflet, the app may have some minor issues and a basic interface, but I'm committed to improving it.
 
-## Uploading Water Points:
+## [Uploading Water Points:](https://watercoolermap.onrender.com/add)
 To upload a water point, click on the top right corner of the map. You'll need to take a photo of the water point and fill in the necessary information and hit "Submit."
 
 ## Contact and Inquiries:
