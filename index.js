@@ -3,6 +3,8 @@ const cors = require("cors");
 const path = require("path")
 const hbs = require('hbs');
 const wax = require('wax-on');
+// read the variables form the .env file
+// and save it to process.env
 require('dotenv').config()
 
 const app = express();

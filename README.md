@@ -2,7 +2,7 @@
 ![Example image](tg_image_1030401888.jpeg)
 ### https://watercoolermap.onrender.com/
 ## Introduction:
-Since coming to live in Singapore, I've noticed some genuinely user-friendly aspects of the city. One prominent example is the abundance of free water Coolers, found in airports, food court corners, near public restrooms, within condom, and especially along parks and greenways. Given Singapore's tropical, equatorial climate, it's easy to get dehydrated when outdoors. Carrying water everywhere can be cumbersome, and buying water can be economically burdensome.
+Since coming to live in Singapore, I've noticed some genuinely user-friendly aspects of the city. One prominent example is the abundance of free water Coolers, found in airports, food court corners, near public restrooms,and especially along parks and greenways. Given Singapore's tropical, equatorial climate, it's easy to get dehydrated when outdoors. Carrying water everywhere can be cumbersome, and buying water can be economically burdensome.
 
 Access to free, safe drinking water outdoors is particularly beneficial for those who enjoy outdoor activities like running or hiking, like myself. However, this raises a question: How do I find these water points when exploring unfamiliar areas?
 
