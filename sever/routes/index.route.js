@@ -47,6 +47,12 @@ module.exports = app => {
       });
     }
   });
+  router.get("/test",(req, res) => {
+    console.log('req====>', req);
+    res.send({
+      message: "This is test route"
+    });
+  });
 
   app.use("/", router);
 };
